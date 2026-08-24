@@ -1,48 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Felipe Figueroa | Dev Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Felipe Figueroa | Portafolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="profile-header">
-            <span class="badge">● Estudiante Activo</span>
-            <h1>Luis Felipe Figueroa</h1>
-            <p class="subtitle">Ingeniería en Informática</p>
-            <div class="contact-info">
-                <span>📍 Puerto Montt, Chile</span>
-                <span>✉️ <a href="mailto:lu.figueroap@duocuc.cl">lu.figueroap@duocuc.cl</a></span>
-            </div>
-        </header>
 
-        <section class="card">
-            <h2>⚡ Perfil Profesional</h2>
-            <p>Estudiante de Ingeniería en Informática en Duoc UC. Apasionado por el desarrollo de software, la lógica de programación y la resolución de problemas técnicos. En constante aprendizaje de tecnologías modernas para aportar valor en proyectos reales.</p>
-        </section>
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="logo">Luis Figueroa</div>
+    <nav class="nav-links">
+      <a href="#about">Sobre Mí</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
 
-        <section class="card">
-            <h2>🎓 Formación Académica</h2>
-            <ul>
-                <li><strong>Ingeniería en Informática</strong> — Duoc UC <span class="tag-sm">En curso</span></li>
-                <li><strong>Enseñanza Media Completa</strong></li>
-            </ul>
-        </section>
+  <main class="container">
+    <!-- Presentación Principal -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="badge">Estudiante de Ingeniería Informática</span>
+        <h1>Luis Felipe Figueroa</h1>
+        <p class="subtitle">Desarrollador enfocado en soluciones Backend y arquitectura de software.</p>
+        <p class="description">
+          Actualmente cursando 2º año en <strong>Duoc UC</strong>. Enfocado en la construcción de APIs, lógica de negocio y gestión de bases de datos.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+          <a href="#contact" class="btn btn-secondary">Contacto</a>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <img src="img/" alt="Foto de perfil de Luis Felipe Figueroa" class="profile-img" onerror="this.src='https://via.placeholder.com/250x250/1e293b/ffffff?text=Luis+Figueroa'">
+      </div>
+    </section>
 
-        <section class="card">
-            <h2>🛠️ Tech Stack & Habilidades</h2>
-            <div class="skills">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Git & GitHub</span>
-                <span class="tag">Lógica de Programación</span>
-                <span class="tag">Resolución de Problemas</span>
-            </div>
-        </section>
-    </div>
-    <script src="script.js"></script>
+    <!-- Sobre Mí / Información Académica -->
+    <section id="about" class="section">
+      <h2>Sobre Mí</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h3>
+          <ul>
+            <li><strong>Carrera:</strong> Ingeniería Informática</li>
+            <li><strong>Institución:</strong> Duoc UC</li>
+            <li><strong>Nivel:</strong> 2º Año (En cursado)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-code"></i> Perfil Técnico</h3>
+          <p>
+            Orientado a la resolución de problemas lógicos, diseño de modelos relacionales de datos y desarrollo de servicios REST. Interesado en buenas prácticas de código y control de versiones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="section">
+      <h2>Tecnologías y Habilidades</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Backend</h3>
+          <ul class="simple-list">
+            <li>Node.js / Express</li>
+            <li>Python</li>
+            <li>APIs RESTful</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Bases de Datos</h3>
+          <ul class="simple-list">
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>SQL Queries & Modelado</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Herramientas</h3>
+          <ul class="simple-list">
+            <li>Git & GitHub</li>
+            <li>Postman</li>
+            <li>Linux / Bash básico</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="section">
+      <h2>Proyectos</h2>
+      
+      <div class="grid-2">
+        <!-- Proyecto 1: GarzonPro -->
+        <div class="card project-card">
+          <div class="project-header">
+            <h3>GarzonPro</h3>
+            <span class="project-year">2025</span>
+          </div>
+          <p>
+            Sistema integral para la gestión y optimización de pedidos en restaurantes. Diseñado para coordinar la toma de comandas y agilizar el flujo de trabajo entre garzones y cocina.
+          </p>
+          <div class="tags">
+            <span>Gestión de Pedidos</span>
+            <span>Software Restaurantes</span>
+            <span>Desarrollo Colaborativo</span>
+          </div>
+          <a href="https://github.com/14luxoo" target="_blank" class="btn-link">
+            <i class="fa-brands fa-github"></i> Repositorio del Proyecto
+          </a>
+        </div>
+
+        <!-- Proyecto 2: GarzonPRO-Backend -->
+        <div class="card project-card">
+          <div class="project-header">
+            <h3>GarzonPRO-Backend</h3>
+            <span class="project-year">2025</span>
+          </div>
+          <p>
+            Servicio de API RESTful que soporte la lógica del sistema GarzonPro. Incluye control de usuarios, manejo de menú, persistencia de datos y gestión de estados de las comandas.
+          </p>
+          <div class="tags">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>REST API</span>
+          </div>
+          <a href="https://github.com/14luxoo/GarzonPRO-Backend" target="_blank" class="btn-link">
+            <i class="fa-brands fa-github"></i> Ver Código en GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="section">
+      <h2>Contacto</h2>
+      <div class="card contact-card">
+        <p>Puedes ponerte en contacto conmigo a través de mi correo institucional o revisar mi actividad en GitHub:</p>
+        <div class="contact-links">
+          <a href="mailto:lu.figueroap@duocuc.cl" class="contact-item">
+            <i class="fa-solid fa-envelope"></i> lu.figueroap@duocuc.cl
+          </a>
+          <a href="https://github.com/14luxoo" target="_blank" class="contact-item">
+            <i class="fa-brands fa-github"></i> github.com/14luxoo
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Luis Felipe Figueroa — Duoc UC</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
